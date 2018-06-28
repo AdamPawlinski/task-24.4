@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js",
-    "test:watch": "mocha index.test.js -w"
+    "test": "mocha index-compiled.test.js",
+    "test:watch": "mocha index.test.js -w",
+    "build": "babel index.js --watch --out-file index-compiled.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "babel": "^6.23.0"
   }
 }
