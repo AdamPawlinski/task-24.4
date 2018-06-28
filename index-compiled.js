@@ -1,5 +1,5 @@
 const formatDate = timeInSeconds => {
-  // timeInSeconds = parseFloat(timeInSeconds);
+  timeInSeconds = parseFloat(timeInSeconds);
   timeInSeconds = timeInSeconds.toFixed();
   switch (timeInSeconds) {
     case timeInSeconds >= 3600:
